@@ -1,0 +1,70 @@
+<mapreducescript scriptid="customscript_uds_mr_contract_extend">
+    <name>UDS MR Contract Extend</name>
+    <notifyadmins>F</notifyadmins>
+    <notifyemails></notifyemails>
+    <notifyowner>T</notifyowner>
+    <scriptfile>[/SuiteScripts/uds_mr_contract_extend.js]</scriptfile>
+    <scriptcustomfields>
+        <scriptcustomfield scriptid="custscript_uds_ext_contract_id">
+            <accesslevel>2</accesslevel>
+            <applyformatting>F</applyformatting>
+            <checkspelling>F</checkspelling>
+            <defaultchecked>F</defaultchecked>
+            <defaultvalue></defaultvalue>
+            <description>Contract Internal ID</description>
+            <displaytype>NORMAL</displaytype>
+            <fieldtype>TEXT</fieldtype>
+            <help></help>
+            <isformula>F</isformula>
+            <ismandatory>F</ismandatory>
+            <label>Contract ID</label>
+            <searchlevel>2</searchlevel>
+            <storevalue>T</storevalue>
+        </scriptcustomfield>
+        <scriptcustomfield scriptid="custscript_uds_ext_end_date">
+            <accesslevel>2</accesslevel>
+            <applyformatting>F</applyformatting>
+            <checkspelling>F</checkspelling>
+            <defaultchecked>F</defaultchecked>
+            <defaultvalue></defaultvalue>
+            <description>New End Date (YYYY-MM-DD)</description>
+            <displaytype>NORMAL</displaytype>
+            <fieldtype>TEXT</fieldtype>
+            <help></help>
+            <isformula>F</isformula>
+            <ismandatory>F</ismandatory>
+            <label>End Date (ISO)</label>
+            <searchlevel>2</searchlevel>
+            <storevalue>T</storevalue>
+        </scriptcustomfield>
+        <scriptcustomfield scriptid="custscript_uds_ext_services">
+            <accesslevel>2</accesslevel>
+            <applyformatting>F</applyformatting>
+            <checkspelling>F</checkspelling>
+            <defaultchecked>F</defaultchecked>
+            <defaultvalue></defaultvalue>
+            <description>Selected Services (comma-separated IDs)</description>
+            <displaytype>NORMAL</displaytype>
+            <fieldtype>CLOBTEXT</fieldtype>
+            <help></help>
+            <isformula>F</isformula>
+            <ismandatory>F</ismandatory>
+            <label>Services</label>
+            <searchlevel>2</searchlevel>
+            <storevalue>T</storevalue>
+        </scriptcustomfield>
+    </scriptcustomfields>
+    <scriptdeployments>
+        <scriptdeployment scriptid="customdeploy_uds_mr_contract_extend">
+            <buffersize>1</buffersize>
+            <concurrencylimit>1</concurrencylimit>
+            <isdeployed>T</isdeployed>
+            <loglevel>DEBUG</loglevel>
+            <queueallstagesatonce>T</queueallstagesatonce>
+            <runasrole>ADMINISTRATOR</runasrole>
+            <status>NOTSCHEDULED</status>
+            <title>uds_mr_contract_extend</title>
+            <yieldafterminutes>60</yieldafterminutes>
+        </scriptdeployment>
+    </scriptdeployments>
+</mapreducescript>

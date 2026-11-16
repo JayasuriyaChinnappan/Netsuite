@@ -1,0 +1,59 @@
+<customtransactiontype scriptid="customsale_uds_contract">
+  <aidescription></aidescription>
+  <cancloseorder>T</cancloseorder>
+  <iscredit>F</iscredit>
+  <isposting>F</isposting>
+  <isvoidable>F</isvoidable>
+  <name>UDS Contract</name>
+  <showstatus>T</showstatus>
+  <transactionstyle>SALES</transactionstyle>
+  <accounting>
+    <filterbyaccounttype>ACCTREC</filterbyaccounttype>
+    <filterbyaccounttypeall>F</filterbyaccounttypeall>
+    <specifyaccountontransaction>T</specifyaccountontransaction>
+  </accounting>
+  <statuses>
+    <status scriptid="status_10198_11674284_sb1_699">
+      <description>Draft</description>
+      <id>A</id>
+      <isposting>T</isposting>
+    </status>
+    <status scriptid="status_10199_11674284_sb1_146">
+      <description>Active</description>
+      <id>B</id>
+      <isposting>T</isposting>
+    </status>
+    <status scriptid="status_10200_11674284_sb1_462">
+      <description>Invoicing</description>
+      <id>C</id>
+      <isposting>T</isposting>
+    </status>
+    <status scriptid="status_10201_11674284_sb1_318">
+      <description>Billing Paused</description>
+      <id>D</id>
+      <isposting>T</isposting>
+    </status>
+  </statuses>
+  <permissions>
+    <permission>
+      <permittedlevel>FULL</permittedlevel>
+      <permittedrole>ADMINISTRATOR</permittedrole>
+    </permission>
+    <permission>
+      <permittedlevel>FULL</permittedlevel>
+      <permittedrole>[scriptid=customrole_uds_integ_user_]</permittedrole>
+    </permission>
+    <permission>
+      <permittedlevel>EDIT</permittedlevel>
+      <permittedrole>[scriptid=customrole_uds_bids_proposal]</permittedrole>
+    </permission>
+    <permission>
+      <permittedlevel>EDIT</permittedlevel>
+      <permittedrole>[scriptid=customrole1772]</permittedrole>
+    </permission>
+    <permission>
+      <permittedlevel>FULL</permittedlevel>
+      <permittedrole>[scriptid=customrole_mcp_connect_role]</permittedrole>
+    </permission>
+  </permissions>
+</customtransactiontype>
